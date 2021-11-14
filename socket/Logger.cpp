@@ -1,4 +1,5 @@
 ﻿#include "Logger.hpp"
+#include <stdarg.h>
 #include <mutex>
 
 #define LOG_DEBUG(...) fprintf(stderr, __VA_ARGS__)

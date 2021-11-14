@@ -11,6 +11,10 @@ if(WIN32)
   set(SOURCES
     select/MySocket.cpp
   )
+elseif(CMAKE_SYSTEM_NAME MATCHES "FreeBSD")
+  set(SOURCES
+    kevent/MySocket.cpp
+  )
 else()
   set(SOURCES
     epoll/MySocket.cpp

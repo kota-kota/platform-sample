@@ -44,3 +44,16 @@ ninja: プログラムの指定で必要。SDK Manager で CMake をインスト
 > python android_run.py run tests/MyThreadTest
 > python android_run.py run tests/MySocketTest
 ```
+
+## FreeBSD
+
+```bash
+> mkdir build
+> cd build
+
+> cmake .. -DCMAKE_BUILD_TYPE=Debug
+> cmake .. -DCMAKE_BUILD_TYPE=Release
+
+> make
+```
+
